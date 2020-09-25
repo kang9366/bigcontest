@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <title>css</title>
+    <meta charset="UTF-8">
+    <style>
+        #image{
+            margin-top: 100px;
+            margin: 0 auto;
+        }
+        #left{
+            margin-right: 300px;
+        }
+        #submitBtn {
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+            margin-top: 100px;
+            margin-left: 1000px;
+            width: 150px;
+            height: 40px;
+            text-align: center;
+            font-size: 20px;
+            margin: 0 auto;
+        }
+
+        #btn button:hover{
+            color : white;
+            background-color: skyblue;
+        }
+    </style>
+    <body>
+        <p>질문 4</p>
+        <P>"당신은 함께하면 너무나 행복한 사람과 연애를 하는 중입니다. 오늘은 당신의 애인이 바빠 딱 4시간만 데이트할 수 있는 시간이 주어졌는데요. 
+            그렇다면 당신은 오늘 어떤 데이트코스를 짜시겠습니까?"</P>
+        <div id = "image">
+            <img src = "https://classictong.com/files/image/board/603" width = "300" height="300" id = "left">
+            <P><label><input type = "radio" name = "q1">일상에 치여 지치고 힘들었을 애인을 위해 나와 데이트하는 순간만큼은 모든 고민을 다 잊게할만큼의 문화/취미를 경험할 수 있는 곳으로 갈 것이다.</input></label></P>
+            <img src = "https://lh3.googleusercontent.com/proxy/m85IsLdNYSGf28JBUVoxeey3OZUNScCFhrFbDgDn8MIzzsR6CHhIRV7s7vWLBqzeXPPYig3Q3ANlUUGzfCPvVuFwEMUcUyJx-4oLz8PBG_AD6YJXw0bFWLD_xTKAUhjqLciBlAuX4EiAEOLgLJ6Sqd8ri3gqJz6WYWixmPaR0FOpznWXap1b9aYeJbNKpc2Ug3jKs0eeo6W6vXrdOMArXtoo0NaTWdgXIdwpNzoji9NFLVMW37_CauLI7RAoPSkwm97WldhROCawFmmfDU_0b96KA5c0AHk-GTz2XTSyAp_UrBEK90phx0kW4lxJhMHy-b9T_CgBeB1lN9inXAzlPaNLvy_nVQN6oQ3B3lJu6BcFALuO54MrLsw7gT4rySB6Z3v7Qgvv7zMOQAcgJsMD2MCjycO__6pcPD4lLNJcQya9d_w3QomN0VLF6QzbwrBF_oJCcqdVk8ExfhURRKqHIdJd_b-C3Pi-6fTJZitSWik" width = "300" height="300" id= "right">
+            <P><label><input type = "radio" name = "q1">뭐니뭐니해도 먹는 거지. 분위기 있고 굉장히 맛있다고 소문난 식당을 예약할 것이다.</input></label></P>
+        </div>
+        </br>
+        <div id = "btn">
+            <p><button type = "submit " id = "submitBtn" onclick = "submitBtn_click();",  herf>다음</button></p>
+        </div>
+    </body>
+    <script>
+        function submitBtn_click(){
+            location.href="https://kang9366.github.io/bigcontest/result.html"
+        }
+    </script>
+</html>
