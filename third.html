@@ -4,44 +4,69 @@
     <meta charset="UTF-8">
     <style>
         #image{
-            margin-top: 100px;
-            margin: 0 auto;
+            margin-top: 60px;
+            text-align: center;
         }
         #left{
-            margin-right: 300px;
+            float: left;
+            margin-left: 400px;
+        }
+        #right{
+            float: right;
+            margin-right: 400px;
+        }
+        #select{
+            margin-top: 400px;
+        }
+        #left_q{
+            float: left;
+            width: 38%;
+            margin-left: 250px;
+        }
+        #right_q{
+            width: 30%;
+            float: right;
+            margin-right: 250px;
         }
         #submitBtn {
             border-top-left-radius: 8px;
             border-bottom-left-radius: 8px;
             border-top-right-radius: 8px;
             border-bottom-right-radius: 8px;
-            margin-top: 100px;
-            margin-left: 1000px;
             width: 150px;
             height: 40px;
-            text-align: center;
             font-size: 20px;
-            margin: 0 auto;
+            margin-top: 100px;
+            margin-left: 45%;
+            margin-right: 30%;
         }
-
         #btn button:hover{
             color : white;
             background-color: black;
         }
+        #question{
+            text-align: center;
+        }
+        
     </style>
+
     <body>
-        <p>질문 3</p>
-        <P>"길을 가다 유퀴즈 프로그램에 참여하여 문제를 풀고 100만원의 상금을 받았습니다. 당신은 이 돈을 둘 중 어디에다 쓰시겠습니까?" </P>
+        <div id = "question">
+            <h1>질문 3</h1>
+            <h4>"길을 가다 유퀴즈 프로그램에 참여하여 문제를 풀고 100만원의 상금을 받았습니다. 당신은 이 돈을 둘 중 어디에다 쓰시겠습니까?" </h4>
+        </div>
         <div id = "image">
-            <img src = "https://ae01.alicdn.com/kf/HTB1X0v7QpXXXXXuXXXXq6xXFXXXv/58.jpg" width = "300" height="300" id = "left">
-            <P><label><input type = "radio" name = "q1">유투브나 인스타그램에 요리동영상을 올리려면 예쁜 그릇이 필요했는데 마침 잘 됐다. 비쌌지만 가지고 싶었던 그릇들 왕창 사야지</input></label></P>
+            <img src = "https://ae01.alicdn.com/kf/HTB1X0v7QpXXXXXuXXXXq6xXFXXXv/58.jpg" width = "300" height="300" id = "left" >
             <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSUyEIRivfhLklrC70ruGWVXh3Cdh_TKHhPOQ&usqp=CAU" width = "300" height="300" id= "right">
+        </div>
+        <div  id = "left_q">
+            <P><label><input type = "radio" name = "q1">유투브나 인스타그램에 요리동영상을 올리려면 예쁜 그릇이 필요했는데 마침 잘 됐다. 비쌌지만 가지고 싶었던 그릇들 왕창 사야지</input></label></P></br>
+        </div>
+        <div id = "right_q">
             <P><label><input type = "radio" name = "q1">아싸 이쁘게 차 튜닝하고 싶었는데 잘됐다. 이번 기회에 차 정비하고 예쁘게 수리해야지~</input></label></P>
         </div>
         </br>
-        <div id = "btn">
-            <p><button type = "submit " id = "submitBtn" onclick = "submitBtn_click();",  herf>다음</button></p>
-        </div>
+        <p><button type = "submit " id = "submitBtn" onclick = "submitBtn_click();">다음</button></p>
     </body>
     <script>
         function submitBtn_click(){
