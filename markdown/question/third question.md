@@ -1,0 +1,100 @@
+```
+<!DOCTYPE html>
+<html>
+    <title>third page</title>
+    <meta charset="UTF-8">
+    <style>
+        #image{
+            margin-top: 60px;
+            text-align: center;
+        }
+        #left{
+            float: left;
+            margin-left: 400px;
+        }
+        #right{
+            float: right;
+            margin-right: 400px;
+        }
+        #left_q{
+            float: left;
+            width: 20%;
+            margin-left: 390px;
+        }
+        #right_q{
+            width: 30%;
+            float: right;
+            margin-right: 250px;
+        }
+        #submitBtn {
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+            width: 150px;
+            height: 40px;
+            font-size: 20px;
+            margin-top: 100px;
+            margin-left: 45%;
+            margin-right: 30%;
+        }
+        #btn button:hover{
+            color : white;
+            background-color: black;
+        }
+        #question{
+            width: 100%;
+            height: 100px;
+            background-color: #E3F6CE;
+            margin-bottom: 80px;
+            text-align: center;
+        }
+        #third{
+        text-align: center;
+        }
+    </style>
+
+    <body>
+        <div id = "question">
+            <h1>질문 3</h1>
+            <h4>당신은 가벼운 감기에 걸렸습니다. 하지만 내일 약속이 있어서 미용실에 예약을 잡았습니다. 당신은 어디로 가겠습니까?</h4>
+        </div>
+        <div id = "image">
+            <img src = "https://cdn.docdocdoc.co.kr/news/photo/201704/1041561_1103088_3328.jpg" width = "300" height="300" id = "left" >
+            <img src = "https://lh3.googleusercontent.com/proxy/VN7eo8-4TvivftFPIf2R6JWUti0wfP9MazWhpGwzEvE-8QAHIqpWIt2f88qYdNDRf8NESFWNHq41kTGVEHdb1OeTyzb7fe6mO48WwwZVqkX4k--JzwEGq_rsKPffH7ME2tiS5NeZotlrTL-R7yn9ZAtWwMPwfqlwkxw" width = "300" height="300" id= "right">
+        </div>
+        <div  id = "left_q">
+            <P><label><input type = "radio" name = "q1" value = "health">병원 : 그래도 혹시모를 건강을 중요시한다</input></label></P></br>
+        </div>
+        <div id = "right_q">
+            <P><label><input type = "radio" name = "q1" value = "hair"> 미용실 : 가벼운 감기야 금방 나으니 당장 미용실에 간다 </input></label></P>
+        </div>
+        </br>
+        <p><button type = "submit " id = "submitBtn" onclick = "value_check();">다음</button></p>
+        <div id = "third">
+        </br></br></br>
+            <h3>-강원대학교 정미례 배정윤 박성흠 안정선, 한림대학교 강승구-</h3>
+        </div>
+    </body>
+    <script>
+        function value_check(){
+            temp = location.href.split("?");
+            data = temp[1].split(":");
+            ans_1 = data[0];
+            ans_2 = data[1];
+            var q3_data = document.getElementsByName("q1").length;
+
+            if (document.getElementsByName("q1")[0].checked == false && document.getElementsByName("q1")[1].checked == false){
+                    alert("항목을 선택해주세요");
+            }else{
+                for (var i=0; i < q3_data; i++) {
+                    if (document.getElementsByName("q1")[i].checked == true) {
+                        var ans_3 = document.getElementsByName("q1")[i].value;
+                    }
+                }
+                location.href="https://kang9366.github.io/bigcontest/fourth.html?" + ans_1 + ":" + ans_2 + ":" + ans_3;
+            }
+        } 
+    </script>
+</html>
+```
