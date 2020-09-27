@@ -1,0 +1,226 @@
+```
+<!DOCTYPE html>
+<html>
+    <title>fifth page</title>
+    <meta charset="UTF-8">
+    <style>
+        #image{
+            margin-top: 100px;
+            margin: 0 auto;
+        }
+        #left{
+            float: left;
+            margin-left: 400px;
+        }
+        #right{
+            float: right;
+            margin-right: 400px;
+        }
+        #left_q{
+            float: left;
+            width: 29%;
+            margin-left: 345px;
+        }
+        #right_q{
+            width: 30%;
+            float: right;
+            margin-right: 220px;
+        }
+        #submitBtn {
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+            width: 150px;
+            height: 40px;
+            font-size: 20px;
+            margin-top: 100px;
+            margin-left: 45%;
+            margin-right: 30%;
+        }
+        #btn button:hover{
+            color : white;
+            background-color: black;
+        }
+        #question{
+            width: 100%;
+            height: 100px;
+            background-color: #E3F6CE;
+            margin-bottom: 80px;
+            text-align: center;
+        }
+        #third{
+        text-align: center;
+        }
+    </style>
+    <body>
+        <div id = "question">
+            <h1>질문 5</h1>
+            <h4>하루동안 혼자만의 시간이 생겼습니다. 어디에 시간을 쓰시겠습니까?</h4>
+        </div>
+        <div id = "image">
+            <img src = "https://t1.daumcdn.net/thumb/R720x0.fpng/?fname=http://t1.daumcdn.net/brunch/service/guest/image/VGg6ex0RZlr9ZJuPYIES3q7zNDo.png" width = "300" height="300" id = "left">
+            <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQnkB9qpWWPKLuIzVVUv2Y2ZMrRwySuvJNG0w&usqp=CAU" width = "300" height="300" id= "right">
+        </div>
+        <div  id = "left_q">
+            <P><label><input type = "radio" name = "q1" value = "book">이번에 유명한 서점 생겼던데, 거기서 책 좀 읽을까?</input></label></P>
+        </div>
+        <div id = "right_q">
+            <P><label><input type = "radio" name = "q1" value = "hobby">1일 클래스 등록해서 새로운 취미를 배워볼까?</input></label></P>
+        </div>
+        </br>
+        <p><button type = "submit " id = "submitBtn" onclick = "value_check();",  herf>결과 확인</button></p>
+        <div id = "third">
+        </br></br></br>
+            <h3>-강원대학교 정미례 배정윤 박성흠 안정선, 한림대학교 강승구-</h3>
+        </div>
+    </body>
+    <script>
+        function value_check(){
+            temp = location.href.split("?");
+            data = temp[1].split(":");
+            ans_1 = data[0];
+            ans_2 = data[1];
+            ans_3 = data[2];
+            ans_4 = data[3];
+            var q5_data = document.getElementsByName("q1").length;
+
+            if (document.getElementsByName("q1")[0].checked == false && document.getElementsByName("q1")[1].checked == false){
+                alert("항목을 선택해주세요");
+            }else{
+                for (var i=0; i < q5_data; i++) {
+                    if (document.getElementsByName("q1")[i].checked == true) {
+                        var ans_5 = document.getElementsByName("q1")[i].value;
+                    }
+                }
+                
+        if(ans_1 == "fashion"){
+            if(ans_2 == "picnic"){
+                if(ans_3 == "hair"){
+                    if(ans_4 == "car"){
+                        if(ans_5 == "book"){
+                            location.href = "https://kang9366.github.io/bigcontest/result/result1.html";
+                        }else{
+                            location.href = "https://kang9366.github.io/bigcontest/result/result2.html";
+                        }
+                    }else{
+                        if(ans_5 == "book"){
+                            location.href = "https://kang9366.github.io/bigcontest/result/result3.html";
+                        }else{
+                            location.href = "https://kang9366.github.io/bigcontest/result/result4.html";
+                        }
+                    }
+                }else{
+                    if(ans_4 == "car"){
+                        if(ans_5 == "book"){
+                            location.href = "https://kang9366.github.io/bigcontest/result/result5.html";
+                        }else{
+                            location.href = "https://kang9366.github.io/bigcontest/result/result6.html";
+                        }
+                    }else{
+                        if(ans_5 == "book"){
+                            location.href = "https://kang9366.github.io/bigcontest/result/result7.html";
+                        }else{
+                            location.href = "https://kang9366.github.io/bigcontest/result/result8.html";
+                        }
+                    }
+                }
+            }else{
+                if(ans_3 == "hair"){
+                    if(ans_4 == "car"){
+                        if(ans_5 == "book"){
+                            location.href = "https://kang9366.github.io/bigcontest/result/result9.html";
+                        }else{
+                            location.href = "https://kang9366.github.io/bigcontest/result/result10.html";
+                        }
+                    }else{
+                        if(ans_5 == "book"){
+                            location.href = "https://kang9366.github.io/bigcontest/result/result11.html";
+                        }else{
+                            location.href = "https://kang9366.github.io/bigcontest/result/result12.html";
+                        }
+                    }
+                }else{
+                    if(ans_4 == "car"){
+                        if(ans_5 == "book"){
+                            location.href = "https://kang9366.github.io/bigcontest/result/result13.html";
+                        }else{
+                            location.href = "https://kang9366.github.io/bigcontest/result/result14.html";
+                        }
+                    }else{
+                        if(ans_5 == "book"){
+                            location.href = "https://kang9366.github.io/bigcontest/result/result15.html";
+                        }else{
+                            location.href = "https://kang9366.github.io/bigcontest/result/result16.html";
+                        }
+                    }
+                }
+            }
+        }else{
+            if(ans_2 == "picnic"){
+                if(ans_3 == "hair"){
+                    if(ans_4 == "car"){
+                        if(ans_5 == "book"){
+                            location.href = "https://kang9366.github.io/bigcontest/result/result17.html";
+                        }else{
+                            location.href = "https://kang9366.github.io/bigcontest/result/result18.html";
+                        }
+                    }else{
+                        if(ans_5 == "book"){
+                            location.href = "https://kang9366.github.io/bigcontest/result/result19.html";
+                        }else{
+                            location.href = "https://kang9366.github.io/bigcontest/result/result20.html";
+                        }
+                    }
+                }else{
+                    if(ans_4 == "car"){
+                        if(ans_5 == "book"){
+                            location.href = "https://kang9366.github.io/bigcontest/result/result21.html";
+                        }else{
+                            location.href = "https://kang9366.github.io/bigcontest/result/result22.html";
+                        }
+                    }else{
+                        if(ans_5 == "book"){
+                            location.href = "https://kang9366.github.io/bigcontest/result/result23.html";
+                        }else{
+                            location.href = "https://kang9366.github.io/bigcontest/result/result24.html";
+                        }
+                    }
+                }
+            }else{
+                if(ans_3 == "hair"){
+                    if(ans_4 == "car"){
+                        if(ans_5 == "book"){
+                            location.href = "https://kang9366.github.io/bigcontest/result/result25.html";
+                        }else{
+                            location.href = "https://kang9366.github.io/bigcontest/result/result26.html";
+                        }
+                    }else{
+                        if(ans_5 == "book"){
+                            location.href = "https://kang9366.github.io/bigcontest/result/result27.html";
+                        }else{
+                            location.href = "https://kang9366.github.io/bigcontest/result/result28.html";
+                        }
+                    }
+                }else{
+                    if(ans_4 == "car"){
+                        if(ans_5 == "book"){
+                            location.href = "https://kang9366.github.io/bigcontest/result/result29.html";
+                        }else{
+                            location.href = "https://kang9366.github.io/bigcontest/result/result30.html";
+                        }
+                    }else{
+                        if(ans_5 == "book"){
+                            location.href = "https://kang9366.github.io/bigcontest/result/result31.html";
+                        }else{
+                            location.href = "https://kang9366.github.io/bigcontest/result/result32.html";
+                        }
+                    }
+                }
+            }
+        }
+            }
+        } 
+    </script>
+</html>
+```
