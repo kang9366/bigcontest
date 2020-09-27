@@ -1,0 +1,52 @@
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result2</title>
+</head>
+<style>
+    #title{
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+    }
+    #subtitle{
+        text-align: center;
+        align-items: center;
+    }
+    #pic{
+        text-align: center;
+        margin-top: 60px;
+    }
+    #first{
+        display: table;
+        width: 100%;
+        height: 200px;
+        background-color: #E0F2F7;
+    }
+    #second{
+        margin-top: 60px;
+    }
+    #third{
+        text-align: center;
+    }
+</style>
+<body>
+    <div id = "first">
+        <h1 id = "title">음식 1박2일 외모 자동차 독서</br>먹방보며 요가하는 도베르만</h1>
+    </div>
+    <div id = "pic">
+        <img src = "https://github.com/kang9366/bigcontest/blob/master/image/%EB%8F%84%EB%B2%A0%EB%A5%B4%EB%A7%8C.png?raw=true" width = "300" height="300">
+    </div>
+    <div id = "second">
+        <h2 id = "subtitle">당신은 자신을 가꾸는 데 만랩이군요. 덕분에 당신 주변엔 당당한 분위기가 흘러요.</br>먹방보며 요가를 즐길 줄 아는 당신은 누구보다도 세상 사는 맛을 알고 있어요.</h2>
+    </div>
+    <div id = "third">
+    </br></br></br>
+        <h3>-강원대학교 정미례 배정윤 박성흠 안정선, 한림대학교 강승구-</h3>
+    </div>
+</body>
+</html>
+```
