@@ -1,0 +1,52 @@
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result2</title>
+</head>
+<style>
+    #title{
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+    }
+    #subtitle{
+        text-align: center;
+        align-items: center;
+    }
+    #pic{
+        text-align: center;
+        margin-top: 60px;
+    }
+    #first{
+        display: table;
+        width: 100%;
+        height: 200px;
+        background-color: #E0F2F7;
+    }
+    #second{
+        margin-top: 60px;
+    }
+    #third{
+        text-align: center;
+    }
+</style>
+<body>
+    <div id = "first">
+        <h1 id = "title">음식 소풍 건강 자동차 취미용품</br>고생한 나에게 닭다리 백개, 핏불테리어</h1>
+    </div>
+    <div id = "pic">
+        <img src = "https://github.com/kang9366/bigcontest/blob/master/image/%ED%95%8F%EB%B6%88%ED%85%8C%EB%A6%AC%EC%96%B4.png?raw=true" width = "300" height="300">
+    </div>
+    <div id = "second">
+        <h2 id = "subtitle">당신은 가만히 있어도 당당한 매력이 느껴지네요. 힘든 세상 속에서 당신만큼 당신을 아는 사람은 없다고 생각하시는군요.</br>그런 당신의 당당함을 주변 사람들도 부러워하고 있어요.</h2>
+    </div>
+    <div id = "third">
+    </br></br></br>
+        <h3>-강원대학교 정미례 배정윤 박성흠 안정선, 한림대학교 강승구-</h3>
+    </div>
+</body>
+</html>
+```
