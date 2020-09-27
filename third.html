@@ -17,7 +17,7 @@
         }
         #left_q{
             float: left;
-            width: 30%;
+            width: 20%;
             margin-left: 390px;
         }
         #right_q{
@@ -63,11 +63,21 @@
             <P><label><input type = "radio" name = "q1"> 미용실 : 가벼운 감기야 금방 나으니 당장 미용실에 간다 </input></label></P>
         </div>
         </br>
-        <p><button type = "submit " id = "submitBtn" onclick = "submitBtn_click();">다음</button></p>
+        <p><button type = "submit " id = "submitBtn" onclick = "value_check();">다음</button></p>
     </body>
     <script>
-        function submitBtn_click(){
-            location.href="https://kang9366.github.io/bigcontest/fourth.html"
-        }
+        function value_check(){
+            var q1_data = document.getElementsByName("q1").length;
+
+            for (var i = 0; i < q1_data; i++) {
+                if (document.getElementsByName("q1")[i].checked == false){
+                    alert("항목을 선택해주세요");
+                    break;
+                }else{
+                    location.href="https://kang9366.github.io/bigcontest/fourth.html"
+                }
+                break;
+            }
+        } 
     </script>
 </html>

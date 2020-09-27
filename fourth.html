@@ -55,17 +55,27 @@
             <img src = "https://i.pinimg.com/originals/ee/a1/0c/eea10c2d70ae4c2c9795ccf129ba477d.jpg" width = "300" height="300" id= "right">
         </div>
         <div  id = "left_q">
-            <P><label><input type = "radio" name = "q1">자신의 집부터 꾸미기 시작한다. </input></label></P>
+            <P><label><input type = "radio" name = "q1" value = "house">자신의 집부터 꾸미기 시작한다. </input></label></P>
         </div>
         <div id = "right_q">
-            <P><label><input type = "radio" name = "q1">나만의 드림카를 찾는다.</input></label></P>
+            <P><label><input type = "radio" name = "q1" value = "car">나만의 드림카를 찾는다.</input></label></P>
         </div>
         </br>
-        <p><button type = "submit " id = "submitBtn" onclick = "submitBtn_click();",  herf>다음</button></p>
+        <p><button type = "submit " id = "submitBtn" onclick = "value_check()">다음</button></p>
     </body>
     <script>
-        function submitBtn_click(){
-            location.href="https://kang9366.github.io/bigcontest/fifth.html"
-        }
+        function value_check(){
+            var q1_data = document.getElementsByName("q1").length;
+
+            for (var i = 0; i < q1_data; i++) {
+                if (document.getElementsByName("q1")[i].checked == false){
+                    alert("항목을 선택해주세요");
+                    break;
+                }else{
+                    location.href="https://kang9366.github.io/bigcontest/fifth.html"
+                }
+                break;
+            }
+        } 
     </script>
 </html>
