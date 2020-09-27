@@ -1,0 +1,52 @@
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result7</title>
+</head>
+<style>
+    #title{
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+    }
+    #subtitle{
+        text-align: center;
+        align-items: center;
+    }
+    #pic{
+        text-align: center;
+        margin-top: 60px;
+    }
+    #first{
+        display: table;
+        width: 100%;
+        height: 200px;
+        background-color: #E0F2F7;
+    }
+    #second{
+        margin-top: 60px;
+    }
+    #third{
+        text-align: center;
+    }
+</style>
+<body>
+    <div id = "first">
+        <h1 id = "title">패션 소풍 건강 가전 독서</br>차 한잔의 여유를 즐기는 우아한 파피용</h1>
+    </div>
+    <div id = "pic">
+        <img src = "https://github.com/kang9366/bigcontest/blob/master/image/%ED%8C%8C%ED%94%BC%EC%9A%A9.png?raw=true" width = "300" height="300">
+    </div>
+    <div id = "second">
+        <h2 id = "subtitle">당신은 여유를 즐기는 타입이군요. 벌써부터 당신에게서 향긋한 차 향기가 풍기네요.</br>바쁜 일상에서 지금처럼 소소한 여유를 갖는다면 힘든 일도 웃어넘길 수 있을 거예요.</h2>
+    </div>
+    <div id = "third">
+    </br></br></br>
+        <h3>-강원대학교 정미례 배정윤 박성흠 안정선, 한림대학교 강승구-</h3>
+    </div>
+</body>
+</html>
+```
