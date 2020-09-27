@@ -1,0 +1,95 @@
+```
+<!DOCTYPE html>
+<html>
+    <title>home page</title>
+    <meta charset="UTF-8">
+    <style>
+        #gender_question{
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+        }
+        #left{
+            float: left;
+            margin-left: 400px;
+        }
+        #right{
+            float: right;
+            margin-right: 400px;
+        }
+        #left_q{
+            float: left;
+            width: 100px;
+            margin-left: 525px;
+        }
+        #right_q{
+            width: 30%;
+            float: right;
+            margin-right: 70px;
+        }
+        #submitBtn {
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+            width: 150px;
+            height: 40px;
+            font-size: 20px;
+            margin-top: 100px;
+            margin-left: 45%;
+            margin-right: 30%;
+        }
+        #btn button:hover{
+            color : white;
+            background-color: black;
+        }
+        #question{
+            display: table;
+            width: 100%;
+            height: 100px;
+            background-color: #E3F6CE;
+            margin-bottom: 80px;
+            text-align: center;
+        }
+        #third{
+        text-align: center;
+        }
+    </style>
+    <body>
+        <div id = "question">
+            <h1 id = "gender_question">성별을 선택해주세요<h1>
+        </div>
+        <div id = "image">
+            <img src = "https://image.freepik.com/free-vector/cute-man-character-cartoon-work-from-home_99413-207.jpg" width = "300" height="300" id = "left">
+            <img src = "https://png.pngtree.com/png-clipart/20190617/original/pngtree-hand-drawn-cartoon-girl-working-overtime-overtime-hardworking-girl-workaholic-png-image_3848502.jpg" width = "300" height="300" id= "right">
+        </div>
+        <div id = "left_q">
+            <P><label><input type = "radio" name = "q1" value = "male">남자</input></label></P>
+        </div>
+        <div id = "right_q">
+            <P><label><input type = "radio" name = "q1" value = "female">여자</input></label></P>
+        </div>
+        </br>
+        <p><button type = "submit " id = "submitBtn" onclick = "value_check();",  herf>다음</button></p>
+        <div id = "third">
+        </br></br></br>
+            <h3>-강원대학교 정미례 배정윤 박성흠 안정선, 한림대학교 강승구-</h3>
+        </div>
+    </body>
+    <script>
+        function value_check(){
+            var gender_data = document.getElementsByName("q1").length;
+
+            if (document.getElementsByName("q1")[0].checked == false && document.getElementsByName("q1")[1].checked == false){
+                alert("항목을 선택해주세요");
+            }else{
+                for (var i=0; i < gender_data; i++) {
+                    if (document.getElementsByName("q1")[i].checked == true) {
+                        location.href = "https://kang9366.github.io/bigcontest/first.html";
+                    }
+                }
+            }
+        } 
+    </script>
+</html>
+```
