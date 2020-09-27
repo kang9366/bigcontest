@@ -1,0 +1,52 @@
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result11</title>
+</head>
+<style>
+    #title{
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+    }
+    #subtitle{
+        text-align: center;
+        align-items: center;
+    }
+    #pic{
+        text-align: center;
+        margin-top: 60px;
+    }
+    #first{
+        display: table;
+        width: 100%;
+        height: 200px;
+        background-color: #E0F2F7;
+    }
+    #second{
+        margin-top: 60px;
+    }
+    #third{
+        text-align: center;
+    }
+</style>
+<body>
+    <div id = "first">
+        <h1 id = "title">패션 1박2일 외모 가전 독서</br>겉보기엔 날카롭지만 나 알고보면 칭찬받고 싶어, 시베리안 허스키</h1>
+    </div>
+    <div id = "pic">
+        <img src = "https://github.com/kang9366/bigcontest/blob/master/image/%EC%8B%9C%EB%B2%A0%EB%A6%AC%EC%95%88%ED%97%88%EC%8A%A4%ED%82%A4.png?raw=true" width = "300" height="300">
+    </div>
+    <div id = "second">
+        <h2 id = "subtitle">당신은 철저하게 자신을 가꾸는 사람이군요. 틈이 없어 보일지 몰라도 당신의 내면은 누구보다도 따듯한 마음이 있네요.</br>끊임없이 노력하는 당신을 위해 새로운 여행을 계획해보는 건 어떨까요?</h2>
+    </div>
+    <div id = "third">
+    </br></br></br>
+        <h3>-강원대학교 정미례 배정윤 박성흠 안정선, 한림대학교 강승구-</h3>
+    </div>
+</body>
+</html>
+```
