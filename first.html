@@ -56,26 +56,28 @@
             <img src = "https://img.khan.co.kr/news/2019/05/30/l_2019053101003584700279572.jpg" width = "300" height="300" id= "right">
         </div>
         <div  id = "left_q">
-            <P><label><input type = "radio" name = "q1" value = "cloth">세일 중이면 당장 사야지~ 이런 기회를 놓칠 수 없어!</input></label></P>
+            <P><label><input type = "radio" name = "q1" value = "fashion">세일 중이면 당장 사야지~ 이런 기회를 놓칠 수 없어!</input></label></P>
         </div>
         <div id = "right_q">
-            <P><label><input type = "radio" name = "q1" value = "dish">저녁에 그거 먹을거야! 안 먹으면 큰일나...</input></label></P>
+            <P><label><input type = "radio" name = "q1" value = "food">저녁에 그거 먹을거야! 안 먹으면 큰일나...</input></label></P>
         </div>
         </br>
         <p><button type = "submit " id = "submitBtn" onclick = "value_check();",  herf>다음</button></p>
     </body>
     <script>
         function value_check(){
+            temp = location.href.split("?");
+            gender = temp[1];
             var q1_data = document.getElementsByName("q1").length;
-
-            for (var i = 0; i < q1_data; i++) {
-                if (document.getElementsByName("q1")[i].checked == false){
+            if (document.getElementsByName("q1")[0].checked == false && document.getElementsByName("q1")[1].checked == false){
                     alert("항목을 선택해주세요");
-                    break;
-                }else{
-                    location.href="https://kang9366.github.io/bigcontest/second.html"
+            }else{
+                for (var i=0; i < q1_data; i++) {
+                    if (document.getElementsByName("q1")[i].checked == true) {
+                        var ans_1 = document.getElementsByName("q1")[i].value;
+                    }
+                    location.href = "https://kang9366.github.io/bigcontest/second.html?" + ans_1;
                 }
-                break;
             }
         } 
     </script>

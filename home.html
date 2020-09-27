@@ -60,17 +60,19 @@
     </body>
     <script>
         function value_check(){
-            var q1_data = document.getElementsByName("q1").length;
+            var gender_data = document.getElementsByName("q1").length;
 
-            for (var i = 0; i < q1_data; i++) {
-                if (document.getElementsByName("q1")[i].checked == false){
-                    alert("항목을 선택해주세요");
-                    break;
-                }else{
-                    location.href="https://kang9366.github.io/bigcontest/third.html"
+            if (document.getElementsByName("q1")[0].checked == false && document.getElementsByName("q1")[1].checked == false){
+                alert("항목을 선택해주세요");
+            }else{
+                for (var i=0; i < gender_data; i++) {
+                    if (document.getElementsByName("q1")[i].checked == true) {
+                        location.href = "https://kang9366.github.io/bigcontest/first.html";
+                    }
                 }
-                break;
             }
         } 
     </script>
 </html>
+
+// https://kang9366.github.io/bigcontest/
